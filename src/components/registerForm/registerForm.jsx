@@ -20,15 +20,15 @@ const RegisterForm = () => {
     <AuthContainer>
       <AuthForm autoComplete="off" onSubmit={handleSubmit}>
         <AuthLabel htmlFor="name">
-          <span>Insert name:</span>
+          <span>Name:</span>
           <AuthInput name="name" type="text" />
         </AuthLabel>
         <AuthLabel htmlFor="email">
-          <span>Insert email:</span>
+          <span>Email:</span>
           <AuthInput name="email" type="email" />
         </AuthLabel>
         <AuthLabel htmlFor="password">
-          <span>Insert password:</span>
+          <span>Password:</span>
           <AuthInput name="password" type="password" />
         </AuthLabel>
         <AuthButton type="submit">Register</AuthButton>

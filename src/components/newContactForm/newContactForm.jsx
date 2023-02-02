@@ -45,7 +45,7 @@ export const NewContactForm = () => {
       <Header>Phonebook</Header>
       <PhonebookForm autoComplete="off" onSubmit={onSubmitHandler}>
         <Label htmlFor="name">
-          Name
+          Name:
           <TypingField
             type="text"
             name="name"
@@ -55,7 +55,7 @@ export const NewContactForm = () => {
           />
         </Label>
         <Label htmlFor="number">
-          Number
+          Phone number:
           <TypingField name="number" type="tel" required></TypingField>
         </Label>
         <SubmitButton type="submit">Add contact</SubmitButton>

@@ -18,8 +18,9 @@ export const Modal = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: ${p => p.theme.space[5]}px;
+  padding: ${p => p.theme.space[5]}px ${p => p.theme.space[6]}px
+    ${p => p.theme.space[5]}px ${p => p.theme.space[6]}px;
   max-width: calc(100vw - 48px);
   max-height: calc(100vh - 24px);
-  background-color: ${p => p.theme.colors.white};
+  background-color: ${p => p.theme.colors.darkBackground};
 `;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FilterField } from './contacts/contacts.styled';
+import { FilterField, FilterLabel } from './contacts/contacts.styled';
 import { useDispatch, useSelector } from 'react-redux';
 import { update } from 'redux/phonebook/filterSlice';
 
@@ -14,9 +14,9 @@ export const Filter = () => {
 
   return (
     <div>
-      <p>Find contacts by name</p>
       <form autoComplete="off">
-        <label htmlFor="filter">
+        <FilterLabel htmlFor="filter">
+          Find contacts by name
           <FilterField
             type="text"
             name="filter"
@@ -26,7 +26,7 @@ export const Filter = () => {
             value={filterValue}
             required
           />
-        </label>
+        </FilterLabel>
       </form>
     </div>
   );

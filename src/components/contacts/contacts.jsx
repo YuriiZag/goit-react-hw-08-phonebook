@@ -4,6 +4,7 @@ import {
   ContactList,
   ContactName,
   ContactNumber,
+  ContactItem,
 } from './contacts.styled';
 import { getContactsList, getFilterRequest } from 'redux/phonebook/selectors';
 import { useDispatch, useSelector } from 'react-redux';
@@ -44,13 +45,13 @@ export const Contacts = () => {
         <ContactList>
           {contacts.map(({ name, number, id }) => {
             return (
-              <li key={id}>
-                <ContactName>{name}</ContactName>:
+              <ContactItem key={id}>
+                <ContactName>{name}:</ContactName>
                 <ContactNumber>{number}</ContactNumber>
                 <DeleteButton type="button" value={id} onClick={onDelete}>
                   delete
                 </DeleteButton>
-              </li>
+              </ContactItem>
             );
           })}
         </ContactList>

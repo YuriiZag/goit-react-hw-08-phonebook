@@ -6,15 +6,17 @@ export const SiteHeader = styled.header`
   justify-content: space-between;
   padding: 0 20px 0 20px;
   box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.5);
-  height: 90px;
+  height: 10%;
+  background-color: ${p => p.theme.colors.headerBackground};
+  border-radius: ${p => p.theme.radii.normal}px;
 `;
 export const NavItem = styled(NavLink)`
+  color: ${p => p.theme.colors.white};
   font-size: ${p => p.theme.fontSizes.m}px;
   font-weight: 500;
   text-decoration: none;
-  color: ${p => p.theme.colors.black};
   &.active {
-    color: navy;
+    text-decoration: underline currentColor;
   }
   :hover,
   :focus {
