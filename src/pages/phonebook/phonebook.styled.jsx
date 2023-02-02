@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 80px;
   height: 90%;
   background-image: repeating-linear-gradient(
     to bottom,

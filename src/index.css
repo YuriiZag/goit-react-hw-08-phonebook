@@ -1,7 +1,17 @@
  /* bring in normalize.css styles */
 
+
+
+
 html{
   height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 body {

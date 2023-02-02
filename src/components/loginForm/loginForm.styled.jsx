@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
-export const AuthContainer = styled.div`
-  display: flex;
 
-  justify-content: center;
+export const AuthContainer = styled.div`
+  padding-top: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-image: repeating-linear-gradient(
     to bottom,
     ${p => p.theme.colors.lightBackground},
@@ -12,6 +14,14 @@ export const AuthContainer = styled.div`
     ${p => p.theme.colors.darkBackground} 40px
   );
   height: 90%;
+`;
+
+export const AuthHeader = styled.h2`
+  font-weight: 00;
+  font-size: 48px;
+  margin: 0;
+  color: ${p => p.theme.colors.white};
+  text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5);
 `;
 
 export const AuthForm = styled.form`
@@ -27,12 +37,13 @@ export const AuthForm = styled.form`
 export const AuthLabel = styled.label`
   font-weight: 600;
   display: flex;
-  justify-content: space-between;
+  gap: 12px;
   font-size: ${p => p.theme.fontSizes.xs}px;
 `;
 
 export const AuthInput = styled.input`
   font-weight: 500;
+  width: 100%;
   font-size: ${p => p.theme.fontSizes.xs}px;
   background-color: transparent;
   border-top: none;
